@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+/* Home Section */
+.home .intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.home .intro img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.home .intro-text {
+    max-width: 600px;
+}
+
+/* About Section */
+.about .content {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Projects Section */
+.projects .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projects .project {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.projects .project:hover {
+    transform: translateY(-5px);
+}
+
+.projects .project h3 {
+    margin-top: 0;
+}
+
+.projects .project a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.projects .project a i {
+    margin-right: 5px;
+}
+
+.projects .project a:hover {
+    color: #007BFF;
+}
+
+/* Contact Section */
+.contact .form-group {
+    margin-bottom: 15px;
+}
+
+.contact .form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact .form-group input,
+.contact .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #007BFF;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.social-links a:hover {
+    color: #007BFF;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

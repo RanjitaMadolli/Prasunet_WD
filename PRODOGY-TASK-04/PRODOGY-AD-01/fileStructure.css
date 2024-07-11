@@ -1,0 +1,34 @@
+FoodCalorieApp/
+│
+├── app/
+│   ├── build/
+│   ├── libs/
+│   ├── src/
+│   │   ├── androidTest/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── com/
+│   │   │   │       └── example/
+│   │   │   │           └── foodcalorieapp/
+│   │   │   │               ├── MainActivity.java
+│   │   │   │               ├── FoodCalorieClassifier.java
+│   │   │   │               └── utils/
+│   │   │   │                   └── ImageUtils.java
+│   │   │   ├── res/
+│   │   │   │   ├── drawable/
+│   │   │   │   ├── layout/
+│   │   │   │   │   └── activity_main.xml
+│   │   │   │   ├── mipmap/
+│   │   │   │   ├── values/
+│   │   │   │   │   ├── colors.xml
+│   │   │   │   │   ├── strings.xml
+│   │   │   │   │   └── styles.xml
+│   │   │   ├── assets/
+│   │   │   │   └── food_calorie_model.tflite
+│   │   │   ├── AndroidManifest.xml
+│   │   ├── test/
+│   ├── build.gradle
+│   └── proguard-rules.pro
+├── build.gradle
+├── settings.gradle
+└── gradle.properties

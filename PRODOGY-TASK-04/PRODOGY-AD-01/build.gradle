@@ -1,0 +1,6 @@
+dependencies {
+    implementation 'org.tensorflow:tensorflow-lite:2.11.0'
+    implementation 'org.tensorflow:tensorflow-lite-support:0.3.1'
+    implementation 'org.tensorflow:tensorflow-lite-metadata:0.3.1'
+    implementation 'org.tensorflow:tensorflow-lite-gpu:2.11.0' // If you want to use GPU acceleration
+}

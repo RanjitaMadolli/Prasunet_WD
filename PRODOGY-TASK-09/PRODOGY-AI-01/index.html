@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classification App</title>
+</head>
+<body>
+    <h1>Upload an Image for Classification</h1>
+    <form id="uploadForm" action="/predict" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="fileInput" accept=".jpg, .jpeg, .png">
+        <button type="submit">Upload and Predict</button>
+    </form>
+    <div id="predictions"></div>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            const formData = new FormData();
+            formData.append('file', document.getElementById('fileInput').files[0]);
+
+            const response = await fetch('/predict', {
+                method: 'POST',
+                body: formData,
+            });
+
+            if (!response.ok) {
+                const errorMessage = await response.json();
+                console.error(errorMessage);
+                return;
+            }
+
+            const predictions = await response.json();
+            const predictionsList = document.getElementById('predictions');
+            predictionsList.innerHTML = '<h2>Predictions</h2>';
+            predictions.forEach(pred => {
+                const label = `${pred.label}: ${Math.round(pred.probability * 100)}%`;
+                const predictionItem = document.createElement('div');
+                predictionItem.textContent = label;
+                predictionsList.appendChild(predictionItem);
+            });
+        });
+    </script>
+</body>
+</html>

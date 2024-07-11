@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Detection and Recognition</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+</head>
+<body>
+    <h1>Face Detection and Recognition</h1>
+    <input type="file" id="fileInput">
+    <button onclick="detectFaces()">Detect Faces</button>
+    <div id="results"></div>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
